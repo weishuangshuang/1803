@@ -1,0 +1,32 @@
+{
+  "pages":[
+      "pages/wifi/wifi",
+    "pages/first/first",
+    
+    "pages/w/w"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "每日新闻",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+        {
+            "pagePath": "pages/first/first",
+            "text": "新闻",
+            "iconPath":"imgs/x1.png",
+            "selectedIconPath":"imgs/x2.png"
+        },
+        {
+            "pagePath":"pages/wifi/wifi",
+            "text":"免费wifi",
+            "iconPath": "imgs/w1.png",
+            "selectedIconPath": "imgs/w2.png"
+        }
+    ],
+    "selectedColor":"#0D9AFE"
+  }
+}

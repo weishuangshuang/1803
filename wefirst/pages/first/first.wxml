@@ -1,0 +1,59 @@
+<view class='top'>
+    <scroll-view class='main' scroll-x="true">
+        <view class='main-ite'>
+            <view>
+                <view class='{{cuy=="top"?"c":"a"}}' bindtap='dianji' id='top'>头条</view>
+            </view>
+            <view>
+                <view class='{{cuy=="shehui"?"c":"a"}}' bindtap='dianji' id='shehui'>社会</view>
+            </view>
+            <view>
+                <view class='{{cuy=="guonei"?"c":"a"}}' bindtap='dianji' id='guonei'>国内</view>
+            </view>
+            <view>
+                <view class='{{cuy=="guoji"?"c":"a"}}' bindtap='dianji' id='guoji'>国际</view>
+            </view>
+            <view>
+                <view class='{{cuy=="yule"?"c":"a"}}' bindtap='dianji' id='yule'>娱乐</view>
+            </view>
+            <view>
+                <view class='{{cuy=="tiyu"?"c":"a"}}' bindtap='dianji' id='tiyu'>体育</view>
+            </view>
+            <view>
+                <view class='{{cuy=="junshi"?"c":"a"}}' bindtap='dianji' id='junshi'>军事</view>
+            </view>
+            <view>
+                <view class='{{cuy=="keji"?"c":"a"}}' bindtap='dianji' id='keji'>科技</view>
+            </view>
+            <view>
+                <view class='{{cuy=="caijing"?"c":"a"}}' bindtap='dianji' id='caijing'>财经</view>
+            </view>
+            <view>
+                <view class='{{cuy=="shishang"?"c":"a"}}' bindtap='dianji' id='shishang'>时尚</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class='s'>+</view>
+</view>
+<scroll-view class='z' scroll-y="true">
+   
+        <block wx:for="{{newsList}}" wx:key="uniquekey">
+            <view bindtap="shouData" id="{{item.url}}">
+                <view>
+                    <text>{{item.title}}</text>
+                </view>
+                <view class='z-itm'>
+                    <image src='{{item.thumbnail_pic_s}}'></image>
+                    <image src='{{item.thumbnail_pic_s02}}'></image>
+                    <image src='{{item.thumbnail_pic_s03}}'></image>
+                </view>
+                <view class='font'>
+                    <view>{{item.author_name}}</view>
+                    <view>{{item.date}}</view>
+                </view>
+                <view class='hr'></view>
+            </view>
+
+        </block>
+    
+</scroll-view>

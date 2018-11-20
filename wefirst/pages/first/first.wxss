@@ -1,0 +1,66 @@
+.top{
+    width: 100vw;
+    height: 80rpx;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.main{
+    width: 85vw;
+    height: 80rpx;
+    background: gainsboro
+}
+.s{
+    width: 15vw;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background: #f00;
+    font-weight: bold;
+    font-size: 16px;
+}
+.main-ite{
+    display: flex;
+    flex-direction: row
+    
+}
+.main-ite view{
+    width: 90rpx;
+    line-height: 80rpx;
+    
+}
+.a{
+    font-size: 16px;
+}
+.c{
+    font-weight: bold
+}
+.z{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+}
+.z-itm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.z-itm image{
+    width: 31vw;
+    height: 80px;
+}
+.font{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    font-size: 12px;
+    color: #DCD6D6;
+}
+.hr{
+    width: 100vw;
+    height: 1px;
+    background: #CECCCC;
+    margin-bottom: 10px;
+}
