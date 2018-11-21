@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script>
+		//china is my country  将第一个字符和最后一个字符取出合并一个新的字符串  
+		var s1 = "china is my country";
+		var c1 = s1.charAt(0)/*取第一个字符，下标为0*/ + s1.charAt(18);
+		console.log("new string:  " + c1);
+		console.log("--------------------------------------------------------")
+
+
+		//A.txt文件 取出这个文件名的后缀并输出
+		function b(fileName){
+			var at = fileName.lastIndexOf(".");//lastIndexOf 从后往前找第一个 “.”  的下标
+			var su = fileName.substr(at);//substr() 从下标为at开始，一直到字符串结束，也可以规定到那里结束，在只要加结束下标
+			console.log(su);
+		}
+		b("A.txt");
+		console.log("--------------------------------------------------------")
+
+
+		//a.b.txt 取出这个文件名的后缀并输出
+		function c(fileName){
+			var at = fileName.lastIndexOf(".");
+			var su = fileName.substr(at);
+			var pr = fileName.substring(0,at+1)
+			console.log("前缀： " + pr + "后缀： " + su);
+		}
+		c("a.b.txt");
+		console.log("--------------------------------------------------------")
+
+
+
+		//a.txt 取出这个文件名的后缀 配以 "myname"为前缀构成新的文件名并输出
+		var s4 = "a.b.txt";
+		var c4 = "myname" + s4.substring(3);
+		console.log("new string: " + c4);
+		console.log("--------------------------------------------------------")
+
+
+		//china is my country 将每一个单词打印输出
+		//第一种方法
+		var s5 = "china is my country";
+		var c5 = s5.split(" ");//splict(" "),以空格为分隔符
+		for(var i = 0; i < c5.length; i++){
+			console.log(i + ":" +c5[i]);
+		}
+		console.log("--------------------------------------------------------")
+		//第二种方法
+		function a(){
+			var s = "china is my country";
+			var st = 0;
+			while (true) {
+				var at = s.indexOf(" ",st);
+				if(at != -1){
+					console.log(s.substring(st,at));
+				}else{
+					console.log(s.substring(st));
+					break;
+				}
+				st = at+1;
+			}
+		}
+		a();
+		console.log("--------------------------------------------------------")
+
+
+
+		//java is a primay  里面有多少个a
+		var ss = "java is a primay";
+		var co = 0;
+		var count = 0;
+		for(var i;i < ss.length; i++){
+			var sm = ss.indexOf("a",co);
+			co = sm+1;
+			if(sm == -1){
+				console.log(count);
+				break;
+			}
+			count++;
+		}
+		console.log("--------------------------------------------------------")
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
